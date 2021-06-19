@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 3 Formularios</title>
+</head>
+<body>
+    <h1>Uso de formularios</h1>
+<!--lenguajes de servicor disponibles para procesar datos de son :php , jsp (java orientado a web),asp,net,asp-->
+<!--estructura de formulario-->
+<!--controles basico desde estraer datos del usuario al formulario-->
+<!--" placeholder="escribe aqui"-->
+<!--<input type="password" name="clave" placeholder="escriba su password"> <br><br>-->
+<form action="" method="GET"></form>
+    <fieldeset>
+<legend>Datos de Ingreso</legend>
+<label>Ingrese su nombre de usuario <input type="text" name="usuario" maxlength="8" minlength="4"></label><br><br>
+ <label for="perfil">Ingrese su perfil</label>
+<input type="text" name="datoperfil" id="perfil" required > <br><br>
+
+ </fieldeset>  <br>
+ <fieldset>
+     <legend>Datos Personales</legend>
+ <label for="email">Ingrese su correo elecrtronico</label>
+<input type="email" name="correo" id="mail" required><br><br>
+<label>Ingrese su edad <input type="number" name="usuario" max="99" min="18"></label><br><br>
+</fieldset> <br><br>
+
+<fieldset>
+<legend>Datos Academicos</legend>
+<p>Seleccione los cursos que desea realizar</p>
+<input type="checkbox" name="curso1" value="html" id="html" checked><label for="html">Html5</label><br><br>
+<input type="checkbox" name="curso2" value="css" id="css" ><label for="css">css3</label> <br><br>
+<input type="checkbox" name="curso3" value="js" id="js"><label for="js">Javascript</label> <br><br>
+<input type="checkbox" name="curso4" value="php" id="php" ><label for="php">PHP7</label> <br><br>
+<p>seleccione la carrera en la que desea inscribirse</p>
+<input type="radio" name="carrera1" id="net" value=".net" checked><label for="net">Programacion .net</label> <br>
+<input type="radio" name="carrera2" id="full" value="fullstack"><label for="full">Programacion web fullstack</label> <br>
+<input type="radio" name="carrera3" id="java" value="java" ><label for="java">Programacion .net</label><br> <br>
+<p>Elija el turno en que desea cursar</p>
+<select name="" id="">
+    <option value="manana">Mañana</option>
+    <option value="tarde">Tarde</option>
+    <option value="noche">Noche</option>
+</select>
+
+<p>Dejenos su sugerencia</p>
+<textarea name="sugerencia" id="" cols="30" rows="10"></textarea> <br><br>
+<button>Enviar</button> <input type="submit" value="cargar"> <input type="reset" value="cancelar">
+</fieldset>
+</form>
+
+</body>
+</html>
